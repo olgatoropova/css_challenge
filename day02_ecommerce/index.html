@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>2 - E-Commerce Component</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="panel">
+				<h1>To Go Menu</h1>
+				<ul class="menu">
+					<li>
+						<div class="plate">
+							<img
+								src="images/plate__french-fries.png"
+								alt="French Fries with Ketchup"
+							/>
+						</div>
+						<div class="content">
+							<div class="menu-item">French Fries with Ketchup</div>
+							<div class="price">$2.23</div>
+							<button class="in-cart">
+								<img src="images/check.svg" alt="Check" />
+								In Cart
+							</button>
+						</div>
+					</li>
+					<li>
+						<div class="plate">
+							<img
+								src="images/plate__salmon-vegetables.png"
+								alt="Salmon and Vegetables"
+							/>
+						</div>
+						<div class="content">
+							<div class="menu-item">Salmon and Vegetables</div>
+							<div class="price">$5.12</div>
+							<button class="in-cart">
+								<img src="images/check.svg" alt="Check" />
+								In Cart
+							</button>
+						</div>
+					</li>
+					<li>
+						<div class="plate">
+							<img
+								src="images/plate__spaghetti-meat-sauce.png"
+								alt="Spaghetti with Sauce"
+							/>
+						</div>
+						<div class="content">
+							<div class="menu-item">Spaghetti with Sauce</div>
+							<div class="price">$7.82</div>
+							<button class="in-cart">
+								<img src="images/check.svg" alt="Check" />
+								In Cart
+							</button>
+						</div>
+					</li>
+					<li>
+						<div class="plate">
+							<img src="images/plate__ravioli.png" alt="Ravioli" />
+						</div>
+						<div class="content">
+							<div class="menu-item">Ravioli</div>
+							<div class="price">$2.23</div>
+							<button class="in-cart">
+								<img src="images/check.svg" alt="Check" />
+								In Cart
+							</button>
+						</div>
+					</li>
+					<li>
+						<div class="plate">
+							<img src="images/plate__tortellini.png" alt="Tortellini" />
+						</div>
+						<div class="content">
+							<div class="menu-item">Tortellini</div>
+							<div class="price">$2.23</div>
+							<button class="in-cart">
+								<img src="images/check.svg" alt="Check" />
+								In Cart
+							</button>
+						</div>
+					</li>
+					<li>
+						<div class="plate">
+							<img
+								src="images/plate__fish-sticks-fries.png"
+								alt="Fish Sticks with Fries"
+							/>
+						</div>
+						<div class="content">
+							<div class="menu-item">Fish Sticks with Fries</div>
+							<div class="price">$6.34</div>
+							<button class="in-cart">
+								<img src="images/check.svg" alt="Check" />
+								In Cart
+							</button>
+						</div>
+					</li>
+					<li>
+						<div class="plate">
+							<img src="images/plate__chicken-salad.png" alt="Chicken Salad" />
+						</div>
+						<div class="content">
+							<div class="menu-item">Chicken Salad</div>
+							<div class="price">$2.23</div>
+							<button class="in-cart">
+								<img src="images/check.svg" alt="Check" />
+								In Cart
+							</button>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="panel cart">
+				<h1>Your Cart</h1>
+				<p class="empty">Your cart is empty</p>
+				<ul class="cart-summary"></ul>
+
+				<div class="totals">
+					<div class="line-item">
+						<div class="label">Subtotal:</div>
+						<div class="amount price subtotal">$0.00</div>
+					</div>
+					<div class="line-item">
+						<div class="label">Tax:</div>
+						<div class="amount price tax">$0.00</div>
+					</div>
+					<div class="line-item total">
+						<div class="label">Total:</div>
+						<div class="amount price total">$0.00</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>

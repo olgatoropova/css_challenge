@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22 - Credit Card</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="credit-card__wrapper flip mastercard">
+            <div class="credit-card__inner">
+                <div class="credit-card--front">
+                    <div class="card-number">
+                        <div class="card-number__shadow shadow">4242 4242 4242 4242</div>
+                        <div class="card-number__emboss emboss">4242 4242 4242 4242</div>
+                    </div>
+                    <div class="card-holder">
+                        <div class="card-holder__shadow shadow">Amy Dutton</div>
+                        <div class="card-holder__emboss emboss">Amy Dutton</div>
+                    </div>
+                    <div class="expiration-date">
+                        <div class="expiration-date__shadow shadow">12/2022</div>
+                        <div class="expiration-date__emboss emboss">12/2022</div>
+                    </div>
+                </div>
+                <div class="credit-card--back">
+                    <div class="signature">Amy Dutton</div>
+                    <div class="cvv">123</div>
+                </div>
+            </div>
+        </div>
+        <div class="form">
+            <form action="#" method="post">
+                <div class="row">
+                    <div class="field">
+                        <label for="card-number">Card Number</label>
+                        <input type="text" name="card-number" id="card-number" />
+                    </div>
+                    <div class="field">
+                        <label for="card-name">Card Name</label>
+                        <input type="text" name="card-name" id="card-name" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="field option__wrapper">
+                        <label for="expiration-year">Expiration Date</label>
+                        
+                        <div class="field__option">
+                            <select name="expiration-year" id="expiration-year">
+                                <option>Year</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                                <option value="2028">2028</option>
+                                <option value="2029">2029</option>
+                                <option value="2030">2030</option>
+                            </select>
+                    
+                            <select name="expiration-month" id="expiration-month">
+                                <option>Month</option>
+                                <option value="1">January</option>
+                                <option value="2">February</option>
+                                <option value="3">March</option>
+                                <option value="4">April</option>
+                                <option value="5">May</option>
+                                <option value="6">June</option>
+                                <option value="7">July</option>
+                                <option value="8">August</option>
+                                <option value="9">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="cvv">CVV</label>
+                        <input type="number" name="cvv" id="cvv" />
+                    </div>
+                </div>
+                <div class="row">
+                    <button type="submit">Update</button>
+                </div>
+            </form>
+        </div>
+    <script src="app.js"></script>
+</body>
+</html>

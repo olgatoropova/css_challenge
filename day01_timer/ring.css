@@ -1,0 +1,25 @@
+@keyframes animate {
+    0% {
+      stroke-dasharray: 0 628.32;
+    }
+  }
+  
+  .progress {
+    animation: animate 1s ease-out forwards;
+  }
+  
+  .percentage {
+    text-anchor: middle;
+    fill: red;
+    font-size: 3.5rem;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+  
+  .subtext {
+    text-anchor: middle;
+    fill: black;
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-weight: bold;
+  }  

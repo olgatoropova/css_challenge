@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
+body {
+	min-height: 100vh;
+	min-width: 100vw;
+    margin: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    background: #262529;
+    display: grid;
+    place-content: center;
+}
+
+.wrapper {
+    background: #262529;
+    box-shadow: 0px 0px 250px #000000;
+    border-radius: 20px;
+    padding: 60px 55px;
+    text-align: center;
+}
+
+.price {
+    color: #FFC700;
+    font-size: 5.875rem;
+    font-weight: 700;
+}
+
+sup {
+    font-size: 4rem;
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 700px;
+    height: 14px;
+    border-radius: 10px;
+    background: #4D4C53;
+    margin: 70px 0;
+
+
+    /*opacity: 0.8;
+    box-shadow: 0px 2px 25px #EA346F;*/
+    
+
+   /* background-image: linear-gradient(#ff4500, #ff4500);
+    background-size: 70% 100%;
+    background-repeat: no-repeat;*/
+}
+  
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: #EA346F;
+    cursor: pointer;
+    outline: 14px solid hsl(340deg 81% 56% / 0.2);
+    /*box-shadow: 0px 0px 0px 14px hsl(340deg 81% 56% / 0.2);*/
+    border: none;
+}
+
+.slider::-moz-range-thumb {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: #EA346F;
+    cursor: pointer;
+    outline: 14px solid hsl(340deg 81% 56% / 0.2);
+    border: none;
+}
+
+/** FF*/
+input[type="range"]::-moz-range-progress {
+    background-color: #EA346F;
+    height: 14px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.buy {
+    background: #333139;
+    border-radius: 100px;
+    text-transform: uppercase;
+    padding: 35px 50px;
+    border: none;
+    color: #FFFFFF;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.875rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.15em;
+    cursor: pointer;
+}

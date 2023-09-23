@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@400;700;900&display=swap');
+
+:root {
+    --primary: #FBFF00;
+}
+
+body {
+    margin: 0;
+    padding: 0;    
+    font-family: 'Roboto', sans-serif;
+    background: #000000;
+    color: #FFFFFF;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1.5fr 2.5fr;
+    margin: 0 200px;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+aside {
+    border-right: 4px solid var(--primary);
+    padding: 100px 35px 0 0;
+}
+
+.logo {
+    padding-bottom: 100px;
+}
+
+.episodes {
+    margin: 50px 0 0;
+    padding: 0;
+    list-style-type: none;  
+}
+
+.episodes li {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.episodes .episode {
+    color: var(--primary);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.875rem;
+    letter-spacing: 0.12em; 
+    margin-bottom: 5px;
+    line-height: 1rem;
+}
+
+.episodes .title {
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+}
+
+/* .episodes li .arrow {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 0;
+    right: -57px;
+
+    background: #000000;
+    border-right: 4px solid var(--primary);
+    border-bottom: 4px solid var(--primary);
+    transform: rotate(-45deg);
+
+    display: none;
+}
+
+.episodes li.selected .arrow {
+    display: block;
+} */
+
+.episodes li.selected:before,
+.episodes li.selected:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 35px solid transparent;
+    border-bottom: 35px solid transparent;
+    border-right: 35px solid transparent;
+    position: absolute;
+    top: -15px;
+}
+
+.episodes li.selected:before {
+    border-left: 35px solid var(--primary);
+    right: -108px;
+}
+
+.episodes li.selected:after {
+    border-left: 35px solid black;
+    right: -101px;
+}
+
+main {
+    padding: 100px 0 100px 75px;
+    display: flex;
+    gap: 50px;
+}
+
+main .content h1 {
+    font-weight: 900;
+    font-size: 2.75rem;
+    line-height: 3.125rem;
+}
+
+main .content p {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.375rem;
+}
+
+main .content a.more {
+    background: url('images/arrow.svg') right center no-repeat;
+    font-family: 'Roboto Mono', monospace;
+    color: var(--primary);
+    text-transform: uppercase;
+    padding-right: 30px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: all 0.2s ease-in-out;
+}
+
+main .content a.more:hover {
+    padding-right: 35px;
+}

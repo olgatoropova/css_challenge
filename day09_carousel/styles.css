@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preview img {
+    max-width: 700px;
+    max-height: 600px;
+}
+
+.caption {
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+.thumbnails {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0 100px;
+}
+
+
+.thumbnails ul {
+    display: flex;
+    gap: 14px;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    padding: 0 100px;
+}
+
+.thumbnails li.selected img {
+    outline: 10px solid #FF00C7;
+    outline-offset: -10px;
+}
+
+.thumbnails li {
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+}
+
+.thumbnails li:last-child img {
+    margin-right: 100px;
+}
+
+.thumbnails li img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+.previous,
+.next {
+    position: absolute;
+    top: 0;
+    width: 100px;
+    background: rgba(255, 0, 199, .3);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 100px;
+    box-sizing: border-box;
+}
+
+.previous {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.previous:hover,
+.next:hover {
+  background: rgba(255, 0, 199, 1);
+}
+
+.next img {
+    transform: rotate(180deg);
+}
+
+.preview {
+    padding-bottom: 120px;
+}

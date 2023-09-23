@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+@font-face {
+    font-family: "bebas";
+    src: url('./fonts/bebasneue-book-webfont.woff') format('woff'),
+        url('./fonts/bebasneue-book-webfont.woff2') format('woff2');
+}
+
+body {
+    background: #2B2A30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.wrapper {
+    box-shadow: -5px 14px 44px #000000, 5px -16px 50px rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    width: 518px;
+    height: 518px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.ring {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    stroke: #09A65A;
+}
+
+.ring.ending {
+    stroke: #900A0A;
+}
+
+.timer {
+    background: radial-gradient(71.4% 71.4% at 51.7% 28.6%, #3A393F 0%, #17171A 100%);
+    box-shadow: inset 0px 0px 114px rgba(0, 0, 0, 0.45);
+    width: 500px;
+    height: 500px;
+    color: white;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.time {
+    display: flex; /* to put textboxes in line */
+    font-family: 'bebas';
+    font-size: 196px;
+}
+
+input[type="text"] {
+    border: 0;
+    border-bottom: 1px dashed;
+    background: none;
+    color: white;
+    width: 150px;
+    text-align: center;
+    font-family: 'bebas';
+    font-size: 196px;
+    height: 170px;
+    outline: none;
+}
+
+input[type="text"]:disabled {
+    border-bottom: none; 
+}
+
+.start {
+    background: none;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 10px;
+    cursor: pointer;
+    opacity: .5;
+    margin-bottom: 20px;
+}
+
+.start:hover {
+    opacity: 1;
+}
+
+.settings {
+    background: none;
+    border: none;
+    cursor: pointer;
+    opacity: .5;
+}
+
+.settings:hover {
+    opacity: 1;
+}

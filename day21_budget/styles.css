@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+:root {
+    --primary: #51F129;
+    --positive: #4CA536;
+    --negative: #df1414;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: black;
+    color: white;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+
+.field {
+    position: relative;
+}
+
+label {
+    font-weight: normal;
+    color: #8E909D;
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+
+input[type="text"] {
+    background: #323645;
+    border-radius: 16px;
+    padding: 35px 20px 16px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 85px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 1.25rem;
+    outline: none;
+    /* add transparent border so there was no jump on focus
+     when border is added */
+    border: 2px solid transparent;
+}
+
+input[type="text"]:focus {
+    border: 2px solid var(--primary);
+}
+
+input[type="text"]:focus + label {
+    color: var(--primary);
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0;
+    min-height: 100vh;
+}
+
+.add-panel {
+    background: #282A37;
+    padding: 100px 125px 180px;
+}
+
+.add-expense {
+    margin: 50px 0;
+    display: flex;
+    gap: 24px;
+}
+
+.add-expense-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.expense-panel {
+    padding: 220px 125px 180px;
+}
+
+.expense-table {
+    display: grid;
+    grid-template-columns: 1fr 150px auto;
+}
+
+.expese-table div {
+    border-bottom: 2px solid #313131;
+    padding: 16px 0;
+}
+
+.delete-expense {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.summary-panel {
+    background: white;
+    color: black;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 48px 125px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.summary-label {
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 1rem;
+}
+
+.summary-amount {
+    font-weight: bold;
+    font-size: 3.375rem;
+    line-height: 5rem;
+}
+
+.summary-amount.positive {
+    color: var(--positive);
+}
+
+.summary-amount.negative {
+    color: var(--negative);
+}

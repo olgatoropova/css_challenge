@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:wght@400;900&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    background: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+svg {
+    max-height: 100%;
+    max-width: 100%;
+}
+  
+svg a:hover .ring {
+    animation-name: beacon;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+  
+@keyframes beacon {
+    0% {
+        r: 22;
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        r: 50;
+        opacity: 0;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        backdrop-filter: none;
+    }
+    20% {
+        backdrop-filter: blur(4px);
+    }
+    40% {
+        backdrop-filter: blur(9px);
+    }
+    60% {
+        backdrop-filter: blur(14px);
+    }
+    80% {
+        backdrop-filter: blur(18px);
+    }
+    100% {
+        backdrop-filter: blur(22px);
+    }
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.overlay {
+    position: fixed;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.overlay.showing {
+    display: flex;
+    animation: fade-in 400ms both ease-out;
+}
+
+.modal {
+    position: relative;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 110px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    display: flex;
+    gap: 70px;
+    padding: 71px 95px;
+    width: 60%;
+    animation: slide-in 500ms both ease-out;
+    animation-delay: 50ms;
+}
+
+.description, .product-image {
+    flex: 1;
+}
+
+.product-image img {
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: #F41E82;
+    font-weight: 700;
+    font-size: 8rem;
+    line-height: 7.25rem; /* .9 */
+    letter-spacing: -.5px;
+    margin-bottom: 45px;
+    padding: 0;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1.125rem;
+    margin-bottom: 45px;
+}
+
+.buy {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+    background: #FFD200;
+    text-decoration: none;
+    padding: 20px 50px;
+    border-radius: 100px;
+    color: black;
+}
+
+.buy:hover {
+    background: #3452A5;
+    color: #FFD200;
+}
+
+.close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    /*transform: translate(-20%, 20%);*/
+    background: none;
+    border: none;
+}
+
+.close img:hover {
+    transform: scale(1.2);
+}

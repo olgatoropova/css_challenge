@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Oswald&display=swap');
+
+body {
+    background: #E9F5FA;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-content: center;
+    min-width: 100vw;
+    min-height: 100vh;
+    font-family: 'Krona One', sans-serif;
+}
+
+body > svg {
+    position: absolute;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.day {
+    color: #4DB0D3;
+    text-align: center;
+}
+
+.day-of-week {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.date {
+    font-size: 4.5rem;
+}
+
+.cloudy {
+    --background: #4DB0D3;
+    --high-temp-color: #E6DF95;
+    --content-color: #D3EBF4;
+}
+
+.sunny {
+    --background: #E6DF95;
+    --high-temp-color: #4DB0D3;
+    --content-color: #247490;
+}
+
+.stormy {
+    --background: #0E2E3A;
+    --high-temp-color: #E6DF95;
+    --content-color: #D3EBF4;
+}
+
+.snowy {
+    --background: #BCE1EF;
+    --high-temp-color: #0E2E3A;
+    --content-color: #247490;
+}
+
+.rainy {
+    --background: #4DB0D3;
+    --high-temp-color: #E6DF95;
+    --content-color: #D3EBF4;
+}
+
+.partly-cloudy {
+    --background: #2B8BAD;
+    --high-temp-color: #E6DF95;
+    --content-color: #D3EBF4;
+}
+
+
+.bar {
+    background: var(--background);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 11px 4px 34px rgba(32, 77, 92, 0.7);
+    border-radius: 50px;
+    min-height: 525px;
+    max-width: 165px;
+    position: relative;
+    padding-top: 200px;
+    box-sizing: border-box;
+}
+
+.high-temp {
+    font-family: 'Oswald', sans-serif;
+    font-size: 6.875rem;
+    padding-bottom: 60px;
+    position: relative;
+    color: var(--high-temp-color);
+}
+
+.degrees {
+    position: absolute;
+    top: 20px;
+    font-size: 3rem;
+}
+
+.content {
+    color: var(--content-color);
+    fill: currentColor;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    top: 10px;
+    display: inline-block;
+}
+
+.precipitation {
+    margin-bottom: 10px;   
+}
+
+.low-temp .icon {
+    left: -3px;
+    position: relative;
+}
+
+.weather svg {
+    position: absolute;
+}
+
+.cloudy .weather svg {
+    left: -25px;
+    top: 75px;
+}
+
+.sunny .weather svg {
+    top: 20px;
+    left: -20px;
+}
+
+.stormy .weather svg {
+    left: -23px;
+    top: 35px;
+}
+
+.snowy .weather svg {
+    left: -25px;
+    top: 20px;
+}
+
+.partly-cloudy .weather svg {
+    left: -15px;
+    top: 20px;
+}
+
+.rainy .weather svg {
+    left: 30px;
+    top: -15px;
+}

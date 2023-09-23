@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 100vh;
+    font-family: 'Roboto Mono', monospace;
+}
+
+img {
+    mix-blend-mode: multiply;
+}
+
+body.you-win {
+    background: url('images/you-win.svg') left top no-repeat;
+    background-size: auto 100%;
+}
+
+body.computer-win  {
+    background: url('images/computer-wins.svg') right top no-repeat;
+    background-size: auto 100%;
+}
+
+body.you-win h1.computer-win,
+body.computer-win h1.you-win {
+    visibility: hidden;
+}
+
+.computer-pick img {
+    transform: scaleX(-1);
+}
+
+.wrapper {
+    display: flex;
+    gap: 200px;
+    position: relative;
+}
+
+button {
+    background: none;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2rem;
+    border: 2px solid black;
+    padding: 15px 85px;
+    cursor: pointer;
+    
+    position: absolute;
+    left: 50%;
+    bottom: 0;  
+    transform: translateX(-50%);
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}

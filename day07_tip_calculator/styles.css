@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700;800&family=Roboto+Mono:wght@700&display=swap');
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    background: #F6F6F3;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-content: center;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.wrapper {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 47px rgba(148, 146, 120, 0.23);
+    width: 825px;
+    border-radius: 22px;
+    padding-top: 30px;
+}
+
+.tip-amount {
+    /* margin-bottom: 35px; */
+    border-bottom: 1px solid #DEDEDE;
+}
+
+/*.tip-amount:not(:first-of-type) {
+    border-top: 1px solid #DEDEDE;
+}*/
+
+.tip-amount,
+.total-per-person {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 35px;
+    padding-bottom: 35px;
+    padding-top: 30px;
+}
+ 
+/*.tip-amount .label {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #333333;
+}*/
+
+.tip-amount sup,
+.total-per-person sup {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 3 rem;
+}
+
+.tip-amount .dollars,
+.total-per-person .dollars {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 5rem;
+}
+
+.input-fields {
+    background: #F7F7F7;
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+    padding: 0 35px;
+    display: flex;
+}
+
+.bill-amount {
+    border-right: 2px solid #DEDEDE;
+    padding: 65px 45px 45px;
+    width: 70%;
+}
+
+.number-of-people {
+    padding: 65px 45px 45px;
+    width: 30%;
+}
+
+input[type="text"] {
+    text-align: center;
+    font-size: 3.875rem;
+    font-family: 'Inter', sans-serif;
+    border: none;
+    background: none;
+    outline: none;
+    width: 100%;
+    border-bottom: 3px dotted #B3B3B3;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+
+.bill-amount input[type="text"] {
+    background: url('./images/dollar.svg') left 15px no-repeat;
+    padding-left: 40px;
+}
+
+.number-of-people input[type="text"] {
+    background: url('./images/people.svg') left 20px no-repeat;
+    padding-left: 40px;
+}
+
+.bill-amount .label,
+.number-of-people .label {
+    text-align: center;
+}
+
+.tip-percentages {
+    background: #EEEEEE;
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 40px;
+    border-top: 1px solid #DEDEDE;
+    border-bottom: 1px solid #DEDEDE;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] + label {
+    background: white;
+    box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.05);
+    border-radius: 16px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #60C1B6;
+    font-family: 'Roboto Mono', monospace;
+    width: 135px;
+    height: 65px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked + label {
+    background: #60C1B6;
+    color: white;
+}
+
+.button-wrapper {
+    text-align: right;
+    padding: 30px 35px;
+}
+
+button {
+    background: #ED7861;
+    padding: 20px 100px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: auto;
+}
